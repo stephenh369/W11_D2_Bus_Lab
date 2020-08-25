@@ -41,4 +41,11 @@ public class BusTest {
         smolBus.addPassenger(person1);
         assertEquals(0, smolBus.getNumberOfPassengers());
     }
+
+    @Test
+    public void canRemovePassenger() {
+        bus.addPassenger(person1);
+        bus.removePassenger(person1);
+        assertEquals(0, bus.getNumberOfPassengers());
+    }
 }
