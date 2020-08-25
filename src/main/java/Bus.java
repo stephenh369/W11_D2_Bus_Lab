@@ -19,4 +19,14 @@ public class Bus {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public int getNumberOfPassengers() {
+        return this.passengers.size();
+    }
+
+    public void addPassenger(Person passenger) {
+        if (getNumberOfPassengers() < capacity) {
+            this.passengers.add(passenger);
+        }
+    }
 }
